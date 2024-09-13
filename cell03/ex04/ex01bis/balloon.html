@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      #balloon {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="balloon"></div>
+    <script>
+      let i = 1;
+      const colors = ["red", "green", "blue"];
+
+      function growUp() {
+        let $balloon = $("#balloon");
+        let currentWidth = $balloon.width();
+        let currentHeight = $balloon.height();
+        
+        i = i >= 2 ? 0 : i + 1;
+        
+        $balloon.css({
+          backgroundColor: colors[i],
+          width: currentWidth + 10 + "px",
+          height: currentHeight + 10 + "px"
+        });
+
+        if (currentWidth > 420) {
+          $balloon.css({
+            width: "200px",
+            height: "200px"
+          });
+        }
+      }
+
+      function growDown() {
+        let $balloon = $("#balloon");
+        let currentWidth = $balloon.width();
+        let currentHeight = $balloon.height();
+
+        i = i > 0 ? i - 1 : 2;
+
+        $balloon.css("backgroundColor", colors[i]);
+
+        if (currentWidth > 200) {
+          $balloon.css({
+            width: currentWidth - 5 + "px",
+            height: currentHeight - 5 + "px"
+          });
+        }
+      }
+
+      $(document).ready(function () {
+        $("#balloon").on("click", growUp);
+        $("#balloon").on("mouseleave", growDown);
+      });
+    </script>
+  </body>
+</html>
