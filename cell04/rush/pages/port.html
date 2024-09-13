@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <header
+      class="bg-gradient-to-r from-purple-800 to-orange-500 text-white py-5 text-center"
+    >
+      <div class="container mx-auto">
+        <h1 class="text-4xl font-bold mb-2">Pon Chuenjitsiri</h1>
+        <p class="text-lg">Full Stack Developer</p>
+        <nav class="mt-2">
+          <a href="../main/home.html" class="mx-4 text-lg hover:underline">Home</a>
+          <a href="#about" class="mx-4 text-lg hover:underline">About</a>
+          <a href="#projects" class="mx-4 text-lg hover:underline"
+            >Work Experience & Project</a
+          >
+          <a href="#skills" class="mx-4 text-lg hover:underline">Skills</a>
+          <a href="#contact" class="mx-4 text-lg hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" class="py-12 px-[50px] bg-white">
+      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-semibold mb-[20px]">About Me</h2>
+          <p class="text-lg mb-6">
+            As a dedicated and motivated computer engineering student, I am
+            seeking an internship opportunity where I can apply and enhance my
+            skills in [mention specific areas like software development,
+            hardware design, networking, etc.]. I am eager to contribute to a
+            dynamic team, gain practical experience, and further develop my
+            understanding of cutting-edge technologies in the field.
+          </p>
+        </div>
+
+        <div class="md:w-1/2 md:pl-[50px] mt-6 md:mt-0">
+          <img
+            src="..\Images\pon.png"
+            alt="About me image"
+            class="w-full h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-12 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold mb-6">Work Experience & Project</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-2">Nov 2023 - Jan 2024</h3>
+            <h4 class="text-lg font-medium mb-2">Codekit Innovation Co.,Ltd</h4>
+            <h5 class="text-md font-medium mb-4">Frontend Developer</h5>
+            <p>
+              Frontend developer in video streaming and CMS development, using
+              Next.js, Tailwind CSS, TypeScript, GitLab. Experienced in
+              front-end development. Skilled in agile methodologies,
+              particularly Scrum, with active involvement in weekly sprint
+              planning and review meetings.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-2">March 2024 - May 2024</h3>
+            <h4 class="text-lg font-medium mb-2">Codekit Innovation Co.,Ltd</h4>
+            <h5 class="text-md font-medium mb-4">FullStack Developer</h5>
+            <p>
+              FullStack developer in Talent Pool Project, using React, Tailwind
+              CSS, TypeScript, Docker, Express, Node.js, Prisma.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-2">March 2023</h3>
+            <h4 class="text-lg font-medium mb-2">Project from OOP Class</h4>
+            <h5 class="text-md font-medium mb-4">FullStack Developer</h5>
+            <p>
+              Using Python as Backend and React as Frontend to build a rent car
+              website.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-semibold mb-2">March 2024</h3>
+            <h4 class="text-lg font-medium mb-2">
+              Project from Web-Application Class
+            </h4>
+            <h5 class="text-md font-medium mb-4">FullStack Developer</h5>
+            <p>
+              Using ASP.NET Core MVC and MySQL for database to build a web
+              application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+        <div class="flex flex-wrap justify-evenly gap-6">
+          <ul class="list-none">
+            <p class="text-gray-500 font-medium mb-2">Programming Languages</p>
+            <li class="text-lg mb-1">C</li>
+            <li class="text-lg mb-1">C#</li>
+            <li class="text-lg mb-1">TypeScript</li>
+            <li class="text-lg mb-1">JavaScript</li>
+            <li class="text-lg mb-1">Python</li>
+            <li class="text-lg mb-1">Golang</li>
+            <li class="text-lg mb-1">Dart</li>
+          </ul>
+          <ul class="list-none">
+            <p class="text-gray-500 font-medium mb-2">Frontend</p>
+            <li class="text-lg mb-1">HTML & CSS</li>
+            <li class="text-lg mb-1">Next.js</li>
+            <li class="text-lg mb-1">React</li>
+            <li class="text-lg mb-1">Tailwind</li>
+            <li class="text-lg mb-1">Flutter</li>
+          </ul>
+          <ul class="list-none">
+            <p class="text-gray-500 font-medium mb-2">Backend</p>
+            <li class="text-lg mb-1">NestJS</li>
+            <li class="text-lg mb-1">Golang</li>
+            <li class="text-lg mb-1">Express</li>
+            <li class="text-lg mb-1">Node.js</li>
+          </ul>
+          <ul class="list-none">
+            <p class="text-gray-500 font-medium mb-2">Database</p>
+            <li class="text-lg mb-1">MongoDB</li>
+            <li class="text-lg mb-1">MySQL</li>
+            <li class="text-lg mb-1">Postgres</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-12 bg-gray-100 text-center">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+        <p class="text-lg mb-6">
+          If you would like to work with me or have any questions, feel free to
+          reach out!
+        </p>
+        <a
+          href="https://github.com/PonChuenjitsiri"
+          class="inline-block bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-all duration-200"
+        >
+          GitHub
+        </a>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-4">
+      <div class="container mx-auto px-4">
+        <p class="text-sm">
+          &copy; 2024 Pon Chuenjitsiri. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
